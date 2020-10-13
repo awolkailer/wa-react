@@ -77,8 +77,14 @@ export default function Weather(props) {
     } else {
         search();
         
-       
-        
+        return(
+      <Loader
+         type="Audio"
+         color="limegreen"
+         height={100}
+         width={100}
+         timeout={10000} />
+     ); 
         
     }
 }
